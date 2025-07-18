@@ -4,5 +4,5 @@ print("Only positive numbers:")
 
 for num in numbers:
     if num < 0:
-        continue  # Skip negative numbers
+        continue  # Skip negative numbers 
     print(num)
