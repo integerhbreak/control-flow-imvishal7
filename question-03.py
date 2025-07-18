@@ -24,10 +24,10 @@ playing_11 = ['Rohit Sharma', 'Shubman Gill', 'Virat Kohli', 'Shreyas Iyer',
               'Kuldeep Yadav', 'Jasprit Bumrah', 'Mohammed Siraj', 'Mohammed Shami']
 
 # Ask user to enter player name
-player = ____  # Input player name from user
+player = str(input("Enter the player name:"))  # Input player name from user
 
 # Check if player is in Playing 11
-if player ___ playing_11:   # Check membership in list
+if player.lower() in [player_name.lower() for player_name in playing_11]:   # Check membership in list
     print(player, "=> Yes, in Playing 11")
 else:
     print(player, "=> No, not in Playing 11")

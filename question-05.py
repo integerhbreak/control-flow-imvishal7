@@ -18,23 +18,23 @@ Steps:
 """
 
 # Get initial balance from user
-balance = ____  # Enter initial balance (float)
+balance = float(input("Enter the initial balance:"))  # Enter initial balance (float)
 
 # Ask user for operation type
-operation = ____  # Enter 'debit' or 'credit'
+operation = str(input("Enter the type debit or credit:"))  # Enter 'debit' or 'credit'
 
 # Get transaction amount
-amount = ____  # Enter transaction amount (float)
+amount = float(input("Enter transaction amount:"))  # Enter transaction amount (float)
 
 # Perform transaction based on operation
-if operation == 'debit':
+if operation.lower() == 'debit':
     if amount <= balance:
-        balance = ____  # Subtract amount from balance
+        balance = balance - amount  # Subtract amount from balance
         print("Debit Successful! ₹", amount, "debited.")
     else:
         print("Insufficient Balance! Debit Failed.")
-elif operation ____= 'credit':
-    balance = ____  # Add amount to balance
+elif operation.lower() == 'credit':
+    balance = balance + amount  # Add amount to balance
     print("Credit Successful! ₹", amount, "credited.")
 else:
     print("Invalid Operation Selected.")
